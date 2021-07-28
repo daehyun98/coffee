@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/library/bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--슬라이드-->
+     
+      <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="슬라이드 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="슬라이드 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="슬라이드 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-item-start">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">예시 제목.</font></font></h1>
+                  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">미국 언어 협회(American Language Association)에 따르면 통계 연구에 따르면 2002년에서 2009년 사이에 아랍어 수요가 미국에서만 126% 증가했습니다.</font></font></p>
+                  <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.0/examples/carousel-rtl/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">오늘 등록</font></font></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-next carousel-item-start">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">또 다른 예시 제목.</font></font></h1>
+                  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">영국 문화원에 따르면 영국에서 영어를 가르치는 것은 연간 20억 파운드 이상의 경제 강화에 기여하고 26,000개 이상의 일자리를 창출했습니다.</font></font></p>
+                  <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.0/examples/carousel-rtl/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">나는 더 알고있다</font></font></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">좋은 측정을 위해 하나 더.</font></font></h1>
+                  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">영국 이외의 언어 투자 규모에 대한 통계는 해마다 다르지만 영국 문화원의 에디 바이어스 사무총장은 해외 영어 교육에 대한 투자가 재정적 수준뿐만 아니라 정치적 수준에서도 계산된다고 믿습니다.</font></font></p>
+                  <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.0/examples/carousel-rtl/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">갤러리 찾아보기</font></font></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이전의</font></font></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">다음 것</font></font></span>
+          </button>
+        </div>
+      <script src="/library/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+      <script src="/library/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/library/bootstrap-5.0.2-dist/js/jquery-3.6.0.js"></script>
+</body>
+</html>
