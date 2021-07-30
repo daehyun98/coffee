@@ -10,6 +10,10 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
 
     
 
@@ -31,8 +35,11 @@
         }
       }
       * {
-        font-family: 'WindSong', cursive;
-      }
+      font-family: 'Gowun Dodum', sans-serif;
+     }
+     #main-row {
+       background-color: antiquewhite;
+     }
     </style>
 
     
@@ -44,25 +51,25 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Everything in Coffee</a>
+      <a class="navbar-brand" href="#">커피<i class="fas fa-coffee"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="pages/menu.html">Menu</a>
+            <a class="nav-link" href="pages/menu.html">Menu <i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/beans.html">Beans</a>
+            <a class="nav-link" href="pages/bean.html">Beans <i class="fas fa-egg"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/map.html">Map</a>
+            <a class="nav-link" href="pages/map.html">Map <i class="fas fa-map-marked-alt"></i></a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form id="js-search" class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" title="search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -82,7 +89,7 @@
         <img src="img/coffee5.jpg" alt="coffee">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Coffee</h1>
+            <h1>Coffee<i class="fas fa-coffee"></i></h1>
             <p>Introduction to the menu made with coffee.</p>
             <p><a class="btn btn-lg btn-primary" href="pages/menu.html">Learn more</a></p>
           </div>
@@ -94,9 +101,9 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Beans</h1>
+            <h1>Beans <i class="fas fa-egg"></i></h1>
             <p>Introduction of different types of coffee beans.</p>
-            <p><a class="btn btn-lg btn-primary" href="pages/beans.html">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="pages/bean.html">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -106,7 +113,7 @@
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>Map</h1>
+            <h1>Map <i class="fas fa-map-marked-alt"></i></h1>
             <p>Introducing famous coffee shops.</p>
             <p><a class="btn btn-lg btn-primary" href="pages/map.html">Learn more</a></p>
           </div>
@@ -135,21 +142,21 @@
       <div class="col-lg-4">
         <img src="img/coffee2.jpg" alt="coffee" class="rounded-circle" width="140" height="140">
 
-        <h2>Menu</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">자세히 보기 &raquo;</a></p>
+        <h2>Menu <i class="fas fa-bars"></i></h2>
+        <p>에스프레소, 콜드브루, 프라푸치노 메뉴를<br>  갤러리 형식으로 보여 드립니다.</p>
+        <p><a class="btn btn-secondary" href="pages/menu.html">자세히 보기 &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/coffee4.jpg" alt="coffee beans" class="rounded-circle" width="140" height="140">
 
-        <h2>Beans</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <h2>Beans <i class="fas fa-egg"></i></h2>
+        <p>8가지의 원두를 소개 해드립니다.<br>구매 링크 제공해드립니다.</p>
         <p><a class="btn btn-secondary" href="#">자세히 보기 &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/map2.jpg" alt="street" class="rounded-circle" width="140" height="140">
 
-        <h2>Map</h2>
+        <h2>Map <i class="fas fa-map-marked-alt"></i></h2>
         <p>And lastly this, the third column of representative placeholder content.</p>
         <p><a class="btn btn-secondary" href="#">자세히 보기 &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
@@ -162,11 +169,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Coffee menu <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading">Coffee menu <br>커피로 만든 18가지의 음료.</h2>
+        <p class="lead">에스프레소 6가지, 콜드브루 6가지, 프라푸치노 6가지 <br>다양한 음료를 갤러리 형식으로 보여 드립니다.</p>
       </div>
       <div class="col-md-5">
-        <img src="img/coffeechat2.jpg" alt="coffee" width="500" height="500">
+        <img src="img/co1.png" alt="coffee" width="500" height="500">
 
       </div>
     </div>
@@ -175,12 +182,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading">Coffee Beans <br>8가지의 원두를 소개 해드립니다.</h2>
+        <p class="lead">브라질 세하도, 인도네시아 만델링, 콜롬비아 수프리모, 과테말라 안티구아, 탄자니아AA, 코스타리카 따라주, 에티오피아 예가체프, 엘살바도르 </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="img/co4.jpg" alt="coffee" width="500" height="500">
       </div>
     </div>
 
@@ -207,12 +213,13 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2021-08-12 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2021-08-12 second project &middot; <a href="https://github.com/daehyun98?tab=repositories">GitHub<i class="fab fa-github fa-2x" ></i></a></p>
   </footer>
 </main>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/search.js"></script>
 
       
   </body>

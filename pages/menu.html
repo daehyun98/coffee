@@ -10,8 +10,9 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -30,161 +31,140 @@
           font-size: 3.5rem;
         }
       }
-      * {
-        font-family: 'MonteCarlo', cursive;
-      }
-      .row  {
-          margin-top: 50px;
-      }
+      .row {
+        margin: 15px;
+      }   
+     header {
+       margin-bottom: 20px;
+     }
+     * {
+      font-family: 'Gowun Dodum', sans-serif;
+     }
+     
     </style>
 
     
     <!-- Custom styles for this template -->
-    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
   </head>
   <body>
     
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-warning fixed-top ">
+  <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Everything in Coffee</a>
+      <a class="navbar-brand" href="../index.html">Coffee<i class="fas fa-coffee"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#">Menu <i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="beans.html">Beans</a>
+            <a class="nav-link" href="bean.html">Beans <i class="fas fa-egg"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="map.html">Map</a>
+            <a class="nav-link" href="map.html">Map <i class="fas fa-map-marked-alt"></i></a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" title="search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
 </header>
 
-<div class="row mb-6">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">에스프레소</h3>
-          <div class="mb-1 text-muted">express</div>
-          <p class="card-text mb-auto">짧은시간에 높은 압력으로 커피를 추출하는 방법
-
-            이탈리아어인 espresso는 영어로 express와 같은 말이다.
-            
-            “빠르다”라는 의미로 사용 된다.
-            
-            에스프레소에 샷을 추가하여 양이 곱빼기가 되면 더블에스프레소or도피오라고 한다.
-            
-            에스프레소보다 더 진하게 뽑은 것을 리스트레토 라고하면 여기에다가 물을 섞을 것은 “롱고”라고 부른다.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-            <img src="../img/espresso.jpg" width="200" height="250">
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">아메리카노</h3>
-          <div class="mb-1 text-muted">Americano</div>
-          <p class="mb-auto">처음 뽑았던 에스프레소에 뜨거운 물을 첨가하게 되면 “아메리카노”가 된다.
-
-            제 2차 세계대전 당시 미군들이 에스프레소에 물을 타먹기 시작한 것이 원조이다.
-            
-            미국인들의 커피라는 이름으로 “아메리카노“라는 이름이 붙여지게 된 것이다.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-            <img src="../img/coffee2.jpg" width="200" height="250">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <h1>에스프레소</h1>
+  <div class="row">
+    <a href="../img/star4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="아메리카노" data-footer="진한 에스프레소와 뜨거운 물을 섞어 스타벅스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피">
+      <img src="../img/star4.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+    <a href="../img/star2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="카페 라떼" data-footer="풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼">
+      <img src="../img/star2.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+    <a href="../img/star3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="카푸치노" data-footer="풍부하고 진한 에스프레소에 따뜻한 우유와 벨벳 같은 우유 거품이 1:1 비율로 어우러져 마무리된 커피 음료">
+      <img src="../img/star3.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+  </div>
+  <div class="row">
+    <a href="../img/star5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="카라멜 마키아또" data-footer="향긋한 바닐라 시럽과 따뜻한 스팀 밀크 위에 풍성한 우유 거품을 얹고 점을 찍듯이 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤한 커피 음료">
+      <img src="../img/star5.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+    <a href="../img/star6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="돌체 라떼" data-footer="더욱 깊은 커피의 맛과 향에 깔끔한 무지방 우유와 부드러운 돌체 시럽이 들어간 음료로 달콤하고 진한 커피 라떼">
+      <img src="../img/star6.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+    <a href="../img/star7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="바닐라 플랫 화이트" data-footer="바닐라 플랫 화이트는 진하고 고소한 리스트레토 샷과 바닐라 시럽 그리고 스팀 밀크로 즐기는 진한 커피 라떼 입니다.">
+      <img src="../img/star7.jpg" class="img-fluid rounded" alt="Espresso">
+    </a>
+  </div>
+  <h1>콜드브루</h1>
+  <div class="row">
+    <a href="../img/cold1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="콜드브루" data-footer="콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 한정된 양만 제공됩니다. 깊은 풍미의 새로운 커피 경험을 즐겨보세요.">
+      <img src="../img/cold1.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+    <a href="../img/cold2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="돌체 콜드 브루" data-footer="무더운 여름철,동남아 휴가지에서 즐기는 커피를 떠오르게 하는 돌체 콜드 브루를 만나보세요">
+      <img src="../img/cold2.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+    <a href="../img/cold3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="바닐라 크림 콜드 브루" data-footer="콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.">
+      <img src="../img/cold3.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+  </div>
+  <div class="row">
+    <a href="../img/cold4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="콜드 브루 몰트" data-footer="[리저브 전용음료] 리저브 콜드 브루, 바닐라 아이스크림, 몰트가 블렌딩된 리저브만의 쉐이크">
+      <img src="../img/cold4.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+    <a href="../img/cold5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="콜드 브루 플로트" data-footer="[리저브 전용음료] 리저브 콜드 브루 위에 녹아 내리는 한 스쿱의 바닐라 아이스크림">
+      <img src="../img/cold5.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+    <a href="../img/cold6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="프렌치 애플 타르트 나이트로" data-footer="카라멜향을 머금은 애플의 달콤함과 부드러운 콜드 크레마를 조화롭게 느낄 수 있는 리저브 나이트로 음료">
+      <img src="../img/cold6.jpg" class="img-fluid rounded" alt="Cold Brew">
+    </a>
+  </div>
+  <h1>프라푸치노</h1>
+  <div class="row">
+    <a href="../img/fr1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="더블 에스프레소 칩 프라푸치노" data-footer="리스트레토 에스프레소 2샷과 에스프레소 칩, 하프앤하프가 진하게 어우러진 커피의 기본에 충실한 프라푸치노">
+      <img src="../img/fr1.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
+    <a href="../img/fr2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="모카 프라푸치노" data-footer="초콜릿과 커피가 어우러진 프라푸치노">
+      <img src="../img/fr2.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
+    <a href="../img/fr3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="자바 칩 프라푸치노" data-footer="커피, 모카 소스, 진한 초콜릿 칩이 입안 가득 느껴지는 스타벅스에서만 맛볼 수 있는 프라푸치노">
+      <img src="../img/fr3.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
+  </div>
+  <div class="row">
+    <a href="../img/fr4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="제주 유기농 말차로 만든 크림 프라푸치노" data-footer="깊고 진한 말차 본연의 맛과 향을 시원하고 부드럽게 즐길 수 있는 프라푸치노">
+      <img src="../img/fr4.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
+    <a href="../img/fr5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="바닐라 크림 프라푸치노" data-footer="신선한 우유와 바닐라 시럽이 어우러진 크림 프라푸치노">
+      <img src="../img/fr5.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
+    <a href="../img/fr6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" data-title="화이트 딸기 크림 프라푸치노" data-footer="바닐라 크림 베이스와 새콤 달콤한 딸기 과육이 레이어드된 크림 프라푸치노">
+      <img src="../img/fr6.jpg" class="img-fluid rounded" alt="Frappuccino">
+    </a>
   </div>
 
+</div>
 
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2021-08-12 second project &middot; <a href="https://github.com/daehyun98?tab=repositories">GitHub<i class="fab fa-github fa-2x" ></i></a></p>
   </footer>
-</main>
 
-
-    <script src="../js/bootstrap.bundle.min.js"></script>
-
-      
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!--부트스트랩4.6버전만 라이트 박스 사용 가능-->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/ekko-lightbox.js"></script>
+    <script>
+    $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });      
+    </script>
   </body>
 </html>
