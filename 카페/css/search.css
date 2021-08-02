@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url(reset.css); 
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+/* 컨텐츠 */
+#content_wrap {
+        width: 100%;
+}
+
+#content_wrap > .main_content {
+        width: 1024px;
+        margin: 0 auto;
+        overflow: hidden;
+}
+
+/* 검색창 */
+.main_content > .option { 
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+}
+
+.main_content > .option p {
+        margin:10px 0;
+
+}  
+
+.main_content #keyword {
+        width: 700px;
+        height: 50px;
+        border: 3px solid #104495;
+        border-radius: 0.5em 0em 0em 0.5em;
+}
+
+.main_content .option input {
+        font-family: 'Hi Melody', cursive;
+        font-size : 2em;
+        font-weight: bolder;
+        color: #104495;
+        text-align: center;
+        vertical-align:middle;
+}
+
+input:hover, textarea:hover { /* 마우스 올라 올 때 */
+        background : white;
+        border-radius: 0.5em 0em 0em 0.5em;   
+}
+
+input[type=text]:focus, input[type=email]:focus { /* 포커스 받을 때 */
+        font-family: 'Hi Melody', cursive;
+        font-size : 2em;
+        font-weight: bolder;
+        color: #f1404b;
+}
+
+.main_content > .option button { 
+        width: 50px;
+        height: 56px;
+        background: #104495;
+        border: 3px solid #104495;
+        border-radius: 0em 0.5em 0.5em 0em ;
+}
+
+.main_content > .option button > img {
+        width: 25px;
+}
+
+/* 카카오 지도 스타일 */
+.map_wrap, .map_wrap * {
+        margin:0;
+        padding:0;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size:12px;
+}
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active { 
+        color:#000;
+        text-decoration: none;
+        
+}
+.map_wrap {
+        position:relative;
+        width:100%;
+        height:400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.map_wrap > #map {
+        width:100%;
+        height:100%;
+        position:relative;
+        overflow:hidden;
+} 
+
+/* 리스트목록 */
+#menu_wrap { 
+        width:100%;
+        height: 400px;
+        margin:10px 0 30px 10px;
+        padding:5px;
+        overflow-y:auto;
+        background:rgba(255, 255, 255, 0.7);
+        z-index: 1;
+        font-size:1.1em;
+        border-radius: 10px;
+}
+
+
+#menu_wrap hr {
+        display: block; 
+        height: 1px;
+        border: 0; 
+        border-top: 2px solid #104495;
+        margin:3px 0;
+}
+
+#placesList li {
+        list-style: none;
+}
+
+#placesList .item {
+        position:relative;
+        border-bottom:1px solid #104495;
+        overflow: hidden;
+        cursor: pointer;
+        min-height: 65px;
+}
+
+#placesList .item span {
+        display: block;
+        margin-top:4px;
+}
+
+#placesList .item h5, #placesList .item .info {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+#placesList .item .info { 
+        padding:10px 0 10px 55px;
+}
+
+#placesList .item .info:hover { 
+        background: #ffe99a;
+}
+
+#placesList .item .info > h5 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #0a2858;
+}
+
+#placesList .item .info > span:first-of-type {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #0a2858;
+        line-height: 10px;
+}
+
+#placesList .info .gray {
+        color:#8a8a8a;
+}
+
+#placesList .info .jibun { 
+        padding-left:26px;
+        background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;
+}
+
+#placesList .info .tel {
+        color:#5F5F5F;
+}
+
+#placesList .item .markerbg {
+        float:left;
+        position:absolute;
+        width:36px; 
+        height:37px;
+        margin:10px 0 0 10px;
+        background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;
+}
+#placesList .item .marker_1 {background-position: 0 -10px;}
+#placesList .item .marker_2 {background-position: 0 -56px;}
+#placesList .item .marker_3 {background-position: 0 -102px}
+#placesList .item .marker_4 {background-position: 0 -148px;}
+#placesList .item .marker_5 {background-position: 0 -194px;}
+#placesList .item .marker_6 {background-position: 0 -240px;}
+#placesList .item .marker_7 {background-position: 0 -286px;}
+#placesList .item .marker_8 {background-position: 0 -332px;}
+#placesList .item .marker_9 {background-position: 0 -378px;}
+#placesList .item .marker_10 {background-position: 0 -423px;}
+#placesList .item .marker_11 {background-position: 0 -470px;}
+#placesList .item .marker_12 {background-position: 0 -516px;}
+#placesList .item .marker_13 {background-position: 0 -562px;}
+#placesList .item .marker_14 {background-position: 0 -608px;}
+#placesList .item .marker_15 {background-position: 0 -654px;}
+
+#pagination {
+        margin:10px auto;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        color: #104495;
+}
+#pagination a {
+        display:inline-block;
+        margin-right: 10px;
+}
+#pagination .on {
+        font-weight: bold; 
+        cursor: default;
+        color: #f1404b;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 767px) {
+        #content_wrap > .main_content {
+                width: 90vw;
+        }
+
+        /* 검색창 */
+        .main_content > .option { 
+                width: 90vw;
+        }
+        .main_content #keyword { 
+                width: calc(90% - 50px);
+                height: 40px;
+        }
+
+        .main_content .option input {
+                font-size : 1.8em;
+        }
+        input[type=text]:focus, input[type=email]:focus { 
+                font-size : 1.8em;
+        }
+        .main_content > .option button {
+                height: 45px;
+        }
+
+        /* 카카오 지도 스타일 */
+        .map_wrap { 
+                width: 90vw;
+        }
+        /* 리스트목록 */
+        #menu_wrap { 
+                width: 90vw;
+        }
+
+        #placesList .item .info { 
+                word-break:keep-all;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+        #content_wrap > .main_content {
+                width: 90vw;
+        }
+
+        /* 검색창 */
+        .main_content > .option { 
+                width: 90vw;
+        }
+        .main_content #keyword { 
+                width: calc(700px - 10%);
+                height: 40px;
+        }
+
+        .main_content .option input {
+                font-size : 1.8em;
+        }
+        input[type=text]:focus, input[type=email]:focus { 
+                font-size : 1.8em;
+        }
+        .main_content > .option button {
+                height: 45px;
+        }
+
+        /* 카카오 지도 스타일 */
+        .map_wrap { 
+                width: 90vw;
+        }
+        /* 리스트목록 */
+        #menu_wrap { 
+                width: 90vw;
+        }
+
+        #placesList .item .info { 
+                word-break:keep-all;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
